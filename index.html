@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="faviccon1.png">
+
+
+    <!--w3 css--> 
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    
+
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="main.css">
+    
+
+    <title>quiz</title>
+</head>
+<body onload="bodyload()">
+
+  <div class="nav" onclick="openNav()">☰</div>
+
+
+    <div id="mySidebarr" class="sidebar">
+
+        <div class="w3-container mydiv" style="margin-bottom: 30px;"><h3 style="font-size: 40px; text-align: center;">Coding <br> Quiz</h3></div>
+
+        <a href="#inte" onclick="w3_close()" class="pad align w3-bar-item w3-button w3-hover-white"><img src="house.png" width="25" height="25" alt="" /> home</a> 
+        <a href="#showcase" onclick="w3_close()" class=" pad align w3-bar-item w3-button w3-hover-white"><img src="cplus.png" width="25" height="25" alt="" /> [C++ programming]</a> 
+        <a href="#services" onclick="w3_close()" class=" pad align w3-bar-item w3-button w3-hover-white"><img src="icons8-java-144.png" width="25" height="25" alt="" /> [java]</a> 
+        <a href="#designers" onclick="w3_close()" class="pad align w3-bar-item w3-button w3-hover-white"><img src="icons8-js-64.png" width="25" height="25" alt="" />[javascript]</a> 
+        <a href="#packages" onclick="w3_close()" class=" pad align w3-bar-item w3-button w3-hover-white">[ Algorithms ]</a> 
+        <a href="#contact" onclick="w3_close()"  class=" pad align w3-bar-item w3-button w3-hover-white">[ Send your mssge ]</a>
+      </div>
+
+          <span>  <!-- this is navbar wali image -->
+          <img id="imge" src="thiswali.jpg" alt="pic">
+
+        </span>
+
+         <!-- page content -->
+         <div style="margin-right: 0%;" class="divI">
+
+            <!-- Header -->
+            <div  class=" w3-container " >
+              <!-- <img style="width: 100%; height: 590px;"  class=" " src="https://www.shutterstock.com/image-photo/cutout-rock-surrounded-by-fir-600w-2013982472.jpg" alt=""> -->
+              <img style="width: 97%; height: 540px;"  class=" bgimg" src="tytyttyt.jpg" alt="">
+
+              <h1 class="w3-jumbo"><b class="phone">CCC ☰ Computer-coding-Circus </b></h1>
+              <h1 id="inte" class="w3-xxxlarge w3-text-red"><b class="phone" style="padding-left: 10px;">jorney</b></h1>
+              <p class="n" style="font-family: 'Caveat', cursive;"> <strong>If you are completely unaware of programming,you should learn C programming first.It will give you an idea of what programming is.Learn about compilers and interpreters, and get in line with terms like source code,interpreted code etc.</strong>Use a text editor and start with normal codes using operators,learn functions and their return types,learn about data types and data structures like what is an array, slowly increase your level to perform simple transformations on array,like reversing it etc. Learn about pointers and try to do simple applications.</p>
+
+              <hr style="width:100%; border-top: 3px dashed red;">
+
+              <!-- <div class="w3-row-padding"> -->
+                
+                
+            </div>
+
+            <div class="w3-half mainimg" style="width: 100%;padding-top: 0px;">
+              
+
+              <img class="phone01 mainimg" src="https://media1.giphy.com/media/PI3QGKFN6XZUCMMqJm/giphy.gif?cid=ecf05e47wa3323yj6dcvc7xo2hujdog78jm6aegrwvuyk1gg&rid=giphy.gif&ct=g" onclick="onClick(this)" alt="Concrete meets bricks">
+              <img class="mainimg" src="https://media1.giphy.com/media/PI3QGKFN6XZUCMMqJm/giphy.gif?cid=ecf05e47wa3323yj6dcvc7xo2hujdog78jm6aegrwvuyk1gg&rid=giphy.gif&ct=g" onclick="onClick(this)" alt="Concrete meets bricks">
+             </div>
+
+            
+            <!-- c++ quiz --> 
+
+            <div style="margin-bottom: 70px; margin-top: 350px; " class=" divII">
+              <img style="width: 100%; height: 590px;"  class="bgimg01 bgsize2 " src="tytyttyt.jpg" alt="">
+
+              <h1 class="w3-xxxlarge w3-text-red" id="showcase" style="text-align:center; text-shadow: 1px 1px 2px black;"><b>C++ programming.</b></h1>
+              <div id="box" > 
+                  
+                <!-- c++ ka quiz strat -->
+                <h2 id="quebox" >(a) - this is my coding question</h2>
+                <div class="row"> 
+                  <input  class="options"  id="option1" type="radio" value="A" name="option">
+                  <label for="option1"> A) optio 1st</label>
+                 
+                </div>
+                <div class="row"> 
+                  <input  class="options" id="option2" type="radio" value="B" name="option">
+                  <label for="option2"> B) optio 1st</label>
+                 
+                </div>
+                <div class="row"> 
+                  <input class="options"  id="option3" type="radio" value="C" name="option">
+                  <label for="option3"> C) optio 1st</label>
+                 
+                </div>
+                <div class="row"> 
+                  <input class="options"  id="option4" type="radio" value="D" name="option">
+                  <label for="option4"> D) optio 1st</label>
+                 
+                </div>
+                <button id="pre" onclick="previous()" > Previous</button>
+                <button id="btn" onclick="submitquiz();">Submit</button>
+                <button id="nxt" onclick="next()">Next</button>
+              </div>
+            </div>
+            <!--................. -->
+
+          
+            <!-- java   -->
+
+            <div style="padding-bottom:0px;" class="divII" >
+              <img style="width: 100%;" class="bgimg01 bgsize2 " src="4880206.jpg" alt="">
+
+              <h1 id="services" class="w3-xxxlarge w3-text-red" style="text-align:center; text-shadow: 1px 1px 2px black;"><b> Java</b></h1>
+
+
+              <div id ="box2">
+                  
+                <h2 id="quebox2">(a) - this is my coding question</h2>
+                <div class="row"> 
+                  <input  class="options2"  id="option11" type="radio" value="A" name="options2">
+                  <label for="option11"> A) optio 1st</label>
+                 
+                </div>
+                <div class="row"> 
+                  <input  class="options2" id="option22" type="radio" value="B" name="options2">
+                  <label for="option22"> B) optio 1st</label>
+                 
+                </div>
+                <div class="row"> 
+                  <input class="options2"  id="option33" type="radio" value="C" name="options2">
+                  <label for="option33"> C) optio 1st</label>
+                 
+                </div>
+                <div class="row"> 
+                  <input class="options2" id="option44" type="radio" value="D" name="options2">
+                  <label for="option44"> D) optio 1st</label>
+                 
+                </div>
+                <button id="pre2" onclick="previous2()" > Previous</button>
+                <button id="btn2" onclick="submitquiz2();">Submit</button>
+                <button id="nxt2" onclick="next2()">Next</button>
+              </div>
+            </div>
+            
+
+            <!-- javascript -->
+            <div class=" divII">
+              <img style="width: 100%;" class="bgimg01 bgsize1" src="tytyttyt.jpg" alt="">
+
+              <h1 id="designers" class="w3-xxxlarge w3-text-red" style="text-align: center;text-shadow: 1px 1px 2px black;" ><b>javascript</b></h1>
+
+              <div id ="box3">
+                  
+                <h2 id="quebox3">(a) - this is my coding question</h2>
+                <div class="row"> 
+                  <input  class="options3"  id="option21" type="radio" value="A" name="options3">
+                  <label for="option21"> A) optio 1st</label>
+                 
+                </div>
+                <div class="row"> 
+                  <input  class="options3" id="option31" type="radio" value="B" name="options3">
+                  <label for="option31"> B) optio 1st</label>
+                 
+                </div>
+                <div class="row"> 
+                  <input class="options3"  id="option41" type="radio" value="C" name="options3">
+                  <label for="option41"> C) optio 1st</label>
+                 
+                </div>
+                <div class="row"> 
+                  <input class="options3" id="option51" type="radio" value="D" name="options3">
+                  <label for="option51"> D) optio 1st</label>
+                 
+                </div>
+                <button id="pre3" onclick="previous3()" > Previous</button>
+                <button id="btn3" onclick="submitquiz3();">Submit</button>
+                <button id="nxt3" onclick="next3()">Next</button>
+              </div>
+
+              
+            </div>
+          
+           
+            <!-- Algoriothms -->
+            <div class="w3-container" id="packages" style="margin-top:75px">
+              <h1 class="w3-xxxlarge w3-text-red"><b> Algorithms</b></h1>
+              <hr style="width:50px;border:5px solid red" class="w3-round">
+              <p style="  font-family: 'Caveat', cursive; font-size: 30px;" >Now you have an idea about how you can learn DSA and why you are learning it. Also, you have an idea about the books you can refer to for learning the subject. Now you need to figure out a guide - an institute, an online course, or mentors to help you learn the topics well or progress in your career.<br><strong>Contact-me</strong> </p>
+            </div>
+          
+            <div class="w3-row-padding">
+              <div class="w3-half w3-margin-bottom">
+                <ul class="w3-ul w3-light-grey w3-center">
+                  <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+
+                  <!-- > -->
+
+                  <li class="w3-padding-16"><a class="links" href="https://www.youtube.com/watch?v=ZdY1Fp9dKzs">Graph</a></li>
+                  <li class="w3-padding-16"><a class="links" href="https://www.youtube.com/watch?v=j5uXyPJ0Pew&list=PL2_aWCzGMAwL3ldWlrii6YeLszojgH77j">Sorting and Searching</a></li>
+                  <li class="w3-padding-16"><a class="links" href="https://www.youtube.com/watch?v=NobHlGUjV3g">Linked List</a></li>
+                  <li class="w3-padding-16"><a class="links" href="https://www.youtube.com/watch?v=qH6yxkw0u78">Spanning Tree</a></li>
+                  <li class="w3-padding-16"><a class="links" href="https://www.youtube.com/watch?v=_8-ht2AKyH4">Stack and Queue</a></li>
+                  <li class="w3-padding-16">
+                    <span class="w3-opacity">Or Buy course</span>
+                    <h2> $10+</h2>
+                    <span class="w3-opacity">From udemy</span>
+                  </li>
+                  <li class="w3-light-grey w3-padding-24">
+                    <button class="w3-button w3-white w3-padding-large w3-hover-black"><a href="https://www.udemy.com/course/data-structures-and-algorithms-in-c-plus-plus/">BUY</a> </button>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- pro -->
+                  
+              <div class="w3-half">
+                <ul class="w3-ul w3-light-grey w3-center">
+                  <li class="w3-red w3-xlarge w3-padding-32">Pro</li>
+                  <li class="w3-padding-16"><a class="links" href="https://www.youtube.com/watch?v=V42FBiohc6c&list=PL2_aWCzGMAwI9HK8YPVBjElbLbI3ufctn">Complexity</a></li>
+                  <li class="w3-padding-16"><a class="links" href="https://www.youtube.com/watch?v=_8-ht2AKyH4">Dynamic Programming</a></li>
+                  <li class="w3-padding-16"><a class="links" href="https://loveforprogramming.quora.com/Backtracking-Memoization-Dynamic-Programming">Backtracking Algorithm</a></li>
+                  <li class="w3-padding-16"><a class="links" href="https://www.byte-by-byte.com/recursion/">Recursion Questions</a></li>
+                  <li class="w3-padding-16"><a class="links" href="https://www.programiz.com/dsa/greedy-algorithm">Greedy Algorithms</a></li>
+                  <li class="w3-padding-16">
+                    <span class="w3-opacity">Or Buy course</span>
+
+                    <h2>$ 10+</h2>
+                    <span class="w3-opacity">From Udemy</span>
+                  </li>
+                  <li class="w3-light-grey w3-padding-24">
+                    <button class="w3-button w3-red w3-padding-large w3-hover-black"><a href="https://www.udemy.com/course/datastructurescncpp/">BUY</a> </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+
+            <!-- Contact -->
+            <div id="contact" >
+              <img class="bgimg bgsize" style="height:560px ;" src="46.jpg" alt="">
+              <h1 style="margin: 20px;" class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
+              <p style="margin: 30px; font-weight: bold;">Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
+              <form action="https://formspree.io/f/xnqrrrko" style="padding: 30px 40px;" method="POST">
+                <div class="w3-section">
+                  <label style="font-weight: bold;" >Name</label>
+                  <input style="background-color: #f1f1f1; box-shadow: 0px 0px 4px rgb(0, 0, 0);" class="w3-input w3-border" type="text" name="Name" required="">
+                </div>
+                
+                <div  class="w3-section">
+                  <label style="font-weight: bold;" >Message</label>
+                  <input style="height: 120px; background-color: #f1f1f1; box-shadow: 0px 0px 4px rgb(0, 0, 0);" class="w3-input" type="text" name="Message" required="">
+                </div>
+                <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
+              </form>  
+              <div class="end2" >
+                <h3 class="end">@copyright-praveen bartwal</h3>
+              </div>
+            </div>
+          
+          <!-- End page content -->
+          
+          </div>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="main.js"></script>          
+</body>
+</html>

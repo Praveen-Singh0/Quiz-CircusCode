@@ -1,0 +1,291 @@
+html {
+  scroll-behavior: smooth;
+}
+
+p{
+  color: #f83a3a;
+} 
+
+body{
+  background-color: rgb(250, 250, 250)
+}
+
+/* LAST ME CSS CODE CO MINIFY KARNA H */
+
+label{
+  font-size: 17px;
+}
+
+
+.bgimg, .bgimg01{
+  position: absolute;
+  z-index: -1;
+}
+
+.bgsize{
+  width: 100%;
+  height: 470px;
+}
+
+.bgsize1{
+  width: 100%;
+  height: 570px;
+}
+.bgsize2{
+  width: 100%;
+  height: 570px;
+}
+
+.navI{
+    z-index: 3;
+    width: 300px;
+}
+.navII{
+    width: 100%;
+    font-size: 22px;
+}
+
+.divI{
+    margin-left: 300px;
+    margin-right: 0px;
+    position: absolute;
+    background-image: url();
+}
+
+.divII{
+    margin-top: 50px;
+    
+
+}
+
+#imge
+{
+  width: 300px;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+
+}
+
+.mainimg{
+  width: 49%;
+  height: 300px;
+  
+
+}
+.nav{
+  position: fixed;
+  cursor: pointer; 
+  margin: 20px; 
+  font-weight: bold; 
+  font-size: 25px;
+  box-shadow: 0px 0px 5px rgb(0, 0, 0); 
+  width: 40px; text-align: center;
+
+}
+
+
+#opn{
+  position: fixed;
+  margin: 15px;
+  font-weight: bold;
+  font-size: 25px;
+  user-select: none;
+  display: inline-block;
+  padding: 8px 16px;
+  text-decoration: none;
+  box-shadow: 0px 0px 5px rgb(0, 0, 0);
+  border-radius: 20px;
+
+  
+}
+#opn:hover{
+  border-radius: 0px;
+}
+
+
+/* c++ question */
+#box, #box2, #box3{
+  width: 80%;
+  margin: 30px 100px;
+  box-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+
+
+.lastquiz{
+  padding: 130px;
+}
+
+.links{
+  text-decoration: none;
+  font-size: 20px;
+  text-shadow: 1px 1px 2px pink;
+}
+
+.links:hover{
+  text-decoration: none;
+  font-size: 20px;
+  color: red;
+}
+
+
+#quebox, #quebox2, #quebox3 {
+  padding:20px;
+  font-weight:bold;
+  text-shadow: 1px 1px 2px pink;
+}
+
+
+.row
+{
+  width: 100%;
+  margin: 2rem;
+  font-weight: bold;
+
+}
+#btn, #pre, #nxt, #pre2, #btn2,#nxt2, #pre3,#btn3, #nxt3{
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  background-color: #f44336;
+  cursor: pointer; 
+}
+
+.n{
+  font-size: 30px;
+}
+
+
+.merg{
+    padding:  50px 60px;
+    font-weight: bold;
+    font-size: 100px;
+   
+}
+
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    text-shadow: 1px 1px 2px pink;
+
+    overflow-x: hidden;
+    transition: 0.6s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;   
+    display: block;
+    border-radius: 25px;
+
+
+  }
+
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    
+  }
+  .align{
+    text-align: left;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    width: 300px;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+    border-radius: 10px;
+
+    padding: 10px 15px;
+    border: none;
+    position: fixed;    
+  }
+
+ .pad{
+margin-bottom: 20px;
+}
+
+.end{
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 17px;
+  background-color: rgb(245, 244, 244);
+  margin-bottom: 0;
+}
+.phone{
+  font-size: 50px;
+  text-shadow: 2px 2px 2px pink;
+}
+
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 0px;}
+    .sidebar a {font-size: 18px;}
+   
+  }
+
+  @media (max-width: 1000px) {
+
+    #imge{
+        width: 0px;
+    }
+
+    .divI{
+      margin: 0px; 
+    }
+    
+    .sidebar {
+      display: none;
+    }
+    
+    .phone{
+      font-size: 40px; 
+    }
+    .mainimg{
+      width: 100%;
+      height: 300px;
+      padding-left: 10px;
+    }
+    .phone01{
+      display: none;
+    }
+    #box, #box2, #box3{
+      width: 95%;
+      height: 100%;
+      margin: 0px 13px;
+      box-shadow: 0px 0px 5px rgb(0, 0, 0);
+    }
+    #btn, #pre, #nxt, #pre2, #btn2,#nxt2, #pre3,#btn3, #nxt3{
+      margin-bottom: 10px;
+      font-size: 15px;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      background-color: #f44336;
+      cursor: pointer; 
+    }
+    .end{
+      font-size: 15px;
+  }
+  .nav{
+    display: none;
+  }
+  .n{
+    font-size: 20px;
+  }
+}
